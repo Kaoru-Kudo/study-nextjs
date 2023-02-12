@@ -6,6 +6,7 @@ import { Header } from '@/components/layouts/Header'
 import { LogoList } from '@/components/pages/top/LogoList'
 import { CardList } from '@/components/pages/top/CardList'
 import { Kv } from '@/components/pages/top/Kv'
+import styles from '@/styles/sass/top.module.sass'
 // import styles from '@/styles/Home.module.sass'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,20 +25,20 @@ export default function Home() {
         <Kv />
         <section
           id='partners'
-          className={'top-content'}
+          className={styles['top-content']}
         >
-          <div className={'top-content__inner'}>
+          <div className={styles['top-content__inner']}>
             <p
-              className={'top-content__subTtl'}
+              className={styles['top-content__subTtl']}
             >PARTNERS
             </p>
             <h2
-              className={'top-content__ttl--primary'}
+              className={styles['top-content__ttl--primary']}
             >
               Lorem Ipsum Dolor
             </h2>
             <p
-              className={'top-content__leadTxt'}
+              className={styles['top-content__leadTxt']}
             >
               Lorem ipsum, dolor sit amet consectetur
               <span>
@@ -45,15 +46,16 @@ export default function Home() {
               </span>
             </p>
             <LogoList />
-            <div className={'top-content__btnWrap'}>
+            <div className={styles['top-content__btnWrap']}>
               <a
-                className={'c-btn c-btn--primary'}
+                // className={`${styles['c-btn']} ${styles['c-btn--primary']}`}
+                className={[styles['c-btn'], styles['c-btn--primary']].join(' ')}
                 href='#'
               >
                 Learn More
               </a>
             </div>
-            <div className={'top-content__desc'}>
+            <div className={styles['top-content__desc']}>
               <Image
                 // className={styles.logo}
                 src='/partner_illust_01.svg'
@@ -62,23 +64,23 @@ export default function Home() {
                 height={240.88}
               />
               <h3
-                className={'top-content__ttl--secondary'}
+                className={styles['top-content__ttl--secondary']}
               >
                 Lorem ipsum dolor sit amet consectetur
               </h3>
-              <p className={'top-content__txt'}>
+              <p className={styles['top-content__txt']}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?
               </p>
-              <div className={'top-content__btnWrap--other'}>
+              <div className={styles['top-content__btnWrap--other']}>
                 <a
-                  className={'c-btn c-btn--primary'}
+                  className={[styles['c-btn'], styles['c-btn--primary']].join(' ')}
                   href='#'
                 >
                   Learn More
                 </a>
               </div>
             </div>
-            <div className={'top-content__desc'}>
+            <div className={styles['top-content__desc']}>
               <Image
                 // className={styles.logo}
                 src='/partner_illust_02.svg'
@@ -87,16 +89,16 @@ export default function Home() {
                 height={240.88}
               />
               <h3
-                className={'top-content__ttl--secondary'}
+                className={styles['top-content__ttl--secondary']}
               >
                 Lorem ipsum dolor sit amet consectetur
               </h3>
-              <p className={'top-content__txt'}>
+              <p className={styles['top-content__txt']}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?
               </p>
-              <div className={'top-content__btnWrap--other'}>
+              <div className={styles['top-content__btnWrap--other']}>
                 <a
-                  className={'c-btn c-btn--primary'}
+                  className={[styles['c-btn'], styles['c-btn--primary']].join(' ')}
                   href='#'
                 >
                   Learn More
@@ -107,19 +109,19 @@ export default function Home() {
         </section>
         <section
           id='team'
-          className={'top-content'}
+          className={styles['top-content']}
         >
-          <div className={'top-content__inner'}>
+          <div className={styles['top-content__inner']}>
             <p
-              className={'top-content__subTtl'}
+              className={styles['top-content__subTtl']}
             >
               TEAM</p>
             <h2
-              className={'top-content__ttl--primary'}
+              className={styles['top-content__ttl--primary']}
             >
               Our Talents</h2>
             <p
-              className={'top-content__leadTxt'}
+              className={styles['top-content__leadTxt']}
             >
               Lorem ipsum, dolor sit amet consectetur
               <span>
@@ -127,9 +129,9 @@ export default function Home() {
               </span>
             </p>
             <CardList />
-            <div className={'top-content__btnWrap'}>
+            <div className={styles['top-content__btnWrap']}>
               <a
-                className={'c-btn c-btn--primary'}
+                className={[styles['c-btn'], styles['c-btn--primary']].join(' ')}
                 href='#'
               >
                 Learn More

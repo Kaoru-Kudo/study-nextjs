@@ -1,17 +1,18 @@
 import Image from 'next/image'
+import styles from '@/styles/sass/layout/footer.module.sass'
 
 export function Footer() {
   return (
-    <footer className={'l-footer'}>
+    <footer className={styles['l-footer']}>
       <ul
-        className={'l-footerLink'}
+        className={styles['l-footerLink']}
       >
         <li
-          className={'l-footerLink__item'}
+          className={styles['l-footerLink__item']}
         >
           <a
             href='#'
-            className={'l-footerLink__icon'}
+            className={styles['l-footerLink__icon']}
           >
             <Image
               // className={styles.logo}
@@ -23,11 +24,11 @@ export function Footer() {
           </a>
         </li>
         <li
-          className={'l-footerLink__item'}
+          className={styles['l-footerLink__item']}
         >
           <a
             href='#'
-            className={'l-footerLink__icon'}
+            className={styles['l-footerLink__icon']}
           >
             <Image
               // className={styles.logo}
@@ -39,11 +40,11 @@ export function Footer() {
           </a>
         </li>
         <li
-          className={'l-footerLink__item'}
+          className={styles['l-footerLink__item']}
         >
           <a
             href='#'
-            className={'l-footerLink__icon'}
+            className={styles['l-footerLink__icon']}
           >
             <Image
               // className={styles.logo}
@@ -55,11 +56,11 @@ export function Footer() {
           </a>
         </li>
         <li
-          className={'l-footerLink__item'}
+          className={styles['l-footerLink__item']}
         >
           <a
             href='#'
-            className={'l-footerLink__icon'}
+            className={styles['l-footerLink__icon']}
           >
             <Image
               // className={styles.logo}
@@ -71,11 +72,11 @@ export function Footer() {
           </a>
         </li>
         <li
-          className={'l-footerLink__item'}
+          className={styles['l-footerLink__item']}
         >
           <a
             href='#'
-            className={'l-footerLink__icon'}
+            className={styles['l-footerLink__icon']}
           >
             <Image
               // className={styles.logo}
@@ -87,11 +88,11 @@ export function Footer() {
           </a>
         </li>
         <li
-          className={'l-footerLink__item'}
+          className={styles['l-footerLink__item']}
         >
           <a
             href='#'
-            className={'l-footerLink__icon'}
+            className={styles['l-footerLink__icon']}
           >
             <Image
               // className={styles.logo}
@@ -103,11 +104,11 @@ export function Footer() {
           </a>
         </li>
         <li
-          className={'l-footerLink__item'}
+          className={styles['l-footerLink__item']}
         >
           <a
             href='#'
-            className={'l-footerLink__icon'}
+            className={styles['l-footerLink__icon']}
           >
             <Image
               // className={styles.logo}
@@ -119,7 +120,7 @@ export function Footer() {
           </a>
         </li>
       </ul>
-      <p className={'l-footer__txt'}>
+      <p className={styles['l-footer__txt']}>
         © Start, 2022. All rights reserved.
       </p>
     </footer>

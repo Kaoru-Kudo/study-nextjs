@@ -1,0 +1,343 @@
+.top-kv 
+  background-color: #74C69D
+  padding: 26px 20px 41px
+
+.top-kv__sub 
+  margin-top: 30px
+  color: #ffffff
+  font-size: 16px
+  font-weight: 700
+  line-height: 1.25
+  letter-spacing: 5px
+
+.top-kv__ttl 
+  margin-top: 15px
+  color: #ffffff
+  font-size: 28px
+  font-weight: 700
+  line-height: 1.25
+
+.top-kv__txt 
+  margin-top: 15px
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  line-height: 1.27
+
+.top-kv__btnWrap 
+  margin-top: 25px
+  max-width: 170px
+
+.c-btn 
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 5px
+  width: 100%
+  height: 100%
+  padding: 10px
+
+.c-btn--kv 
+  background-color: #ffffff
+
+.c-btn--primary 
+  background-color: #212529
+  color: #ffffff
+
+.top-content 
+  background-color: #ffffff
+
+.top-content__inner 
+  padding: 22px 20px 41px
+  text-align: center
+
+.top-content__subTtl 
+  color: #74C69D
+  font-size: 16px
+  font-weight: 700
+  line-height: 1.25
+  letter-spacing: 5px
+
+.top-content__ttl--primary 
+  margin-top: 16px
+  font-size: 24px
+  font-weight: 700
+  line-height: 1.25
+
+.top-content__leadTxt 
+  margin-top: 16px
+  font-size: 20px
+  font-weight: 400
+  line-height: 1.25
+  & > span 
+    display: block
+    margin-top: 10px
+
+.top-logoList 
+  margin-top: 55px
+
+.top-logoList__item
+  list-style: none
+  &:not(:first-of-type) 
+    margin-top: 40px
+
+.top-content__btnWrap 
+  margin: 55px auto 0
+  max-width: 170px
+
+.top-content__btnWrap--other 
+  margin: 20px auto 0 0
+  max-width: 170px
+
+.top-content__desc 
+  margin-top: 60px
+
+.top-content__ttl--secondary 
+  margin-top: 30px
+  color: #212529
+  font-size: 24px
+  font-weight: 700
+  line-height: 1.25
+  text-align: left
+
+.top-content__txt 
+  margin-top: 20px
+  color: rgba(33, 37, 41, 0.5)
+  font-size: 15px
+  font-weight: 400
+  line-height: 1.27
+  text-align: left
+
+.top-cardList
+  margin-top: 40px
+
+.top-cardList__item
+  list-style: none
+  &:not(:first-of-type)
+    margin-top: 35px
+    
+
+.c-illustCard 
+  background: #FFFFFF
+  box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25)
+  border-radius: 5px
+  padding: 20px 38px
+
+.c-illustCard__ttl 
+  margin-top: 19px
+  color: #212529
+  font-size: 24px
+  font-weight: 700
+  line-height: 1.25
+  text-align: left
+
+.c-illustCard__txt 
+  margin-top: 17px
+  color: rgba(33, 37, 41, 0.75)
+  font-size: 15px
+  font-weight: 400
+  line-height: 1.27
+  text-align: left
+
+
+    
+.code 
+  font-weight: 700
+  font-family: var(--font-mono)
+
+
+.grid 
+  display: grid
+  grid-template-columns: repeat(4, minmax(25%, auto))
+  width: var(--max-width)
+  max-width: 100%
+
+
+.card 
+  padding: 1rem 1.2rem
+  border-radius: var(--border-radius)
+  background: rgba(var(--card-rgb), 0)
+  border: 1px solid rgba(var(--card-border-rgb), 0)
+  transition: background 200ms, border 200ms
+
+
+.card span 
+  display: inline-block
+  transition: transform 200ms
+
+
+.card h2 
+  font-weight: 600
+  margin-bottom: 0.7rem
+
+
+.card p 
+  margin: 0
+  opacity: 0.6
+  font-size: 0.9rem
+  line-height: 1.5
+  max-width: 30ch
+
+
+.center 
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  padding: 4rem 0
+
+
+.center::before 
+  background: var(--secondary-glow)
+  border-radius: 50%
+  width: 480px
+  height: 360px
+  margin-left: -400px
+
+
+.center::after 
+  background: var(--primary-glow)
+  width: 240px
+  height: 180px
+  z-index: -1
+
+
+.center::before,
+.center::after 
+  content: ''
+  left: 50%
+  position: absolute
+  filter: blur(45px)
+  transform: translateZ(0)
+
+
+.logo,
+.thirteen 
+  position: relative
+
+
+.thirteen 
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 75px
+  height: 75px
+  padding: 25px 10px
+  margin-left: 16px
+  transform: translateZ(0)
+  border-radius: var(--border-radius)
+  overflow: hidden
+  box-shadow: 0px 2px 8px -1px #0000001a
+
+
+.thirteen::before,
+.thirteen::after 
+  content: ''
+  position: absolute
+  z-index: -1
+
+
+/* Conic Gradient Animation */
+.thirteen::before 
+  animation: 6s rotate linear infinite
+  width: 200%
+  height: 200%
+  background: var(--tile-border)
+
+
+
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) 
+  .card:hover 
+    background: rgba(var(--card-rgb), 0.1)
+    border: 1px solid rgba(var(--card-border-rgb), 0.15)
+  
+
+  .card:hover span 
+    transform: translateX(4px)
+  
+
+
+@media (prefers-reduced-motion) 
+  .thirteen::before 
+    animation: none
+  
+
+  .card:hover span 
+    transform: none
+  
+
+
+/* Mobile */
+@media (max-width: 700px) 
+  .content 
+    padding: 4rem
+  
+
+  .grid 
+    grid-template-columns: 1fr
+    margin-bottom: 120px
+    max-width: 320px
+    text-align: center
+  
+
+  .card 
+    padding: 1rem 2.5rem
+  
+
+  .card h2 
+    margin-bottom: 0.5rem
+  
+
+  .center 
+    padding: 8rem 0 6rem
+  
+
+  .center::before 
+    transform: none
+    height: 300px
+  
+
+  .description 
+    font-size: 0.8rem
+  
+
+  .description a 
+    padding: 1rem
+  
+
+  .description p,
+  .description div 
+    display: flex
+    justify-content: center
+    position: fixed
+    width: 100%
+  
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) 
+  .grid 
+    grid-template-columns: repeat(2, 50%)
+  
+
+
+@media (prefers-color-scheme: dark) 
+  .vercelLogo 
+    filter: invert(1)
+  
+
+  .logo,
+  .thirteen img 
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70)
+  
+
+
+@keyframes rotate 
+  from 
+    transform: rotate(360deg)
+  
+  to 
+    transform: rotate(0deg)
+  
+

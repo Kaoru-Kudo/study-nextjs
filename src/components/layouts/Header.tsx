@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import styles from '@/styles/sass/layout/header.module.sass'
 
 export function Header() {
   return (
-    <header className={'l-header'}>
+    <header className={styles['l-header']}>
       <a
         href='/'
       >
@@ -16,7 +17,7 @@ export function Header() {
         />
       </a>
       <button
-        className={'l-header__menuBtn'}
+        className={styles['l-header__menuBtn']}
         type='button'
       >
         <span aria-hidden='true'></span>

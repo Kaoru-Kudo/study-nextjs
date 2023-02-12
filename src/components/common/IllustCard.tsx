@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import styles from '@/styles/sass/top.module.sass'
 
 export type Props = {
   name: String;
@@ -9,22 +10,21 @@ export type Props = {
 export function IllustCard(props: Props) {
   return (
     <div
-      className={'c-illustCard'}
+      className={styles['c-illustCard']}
     >
       <Image
-        // className={styles.logo}
         src={`${props.src}`}
         alt=''
         width={175}
         height={175}
       />
       <p
-        className={'c-illustCard__ttl'}
+        className={styles['c-illustCard__ttl']}
       >
         {props.name}
       </p>
       <p
-        className={'c-illustCard__txt'}
+        className={styles['c-illustCard__txt']}
       >
         {props.category}
       </p>
