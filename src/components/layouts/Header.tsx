@@ -8,7 +8,6 @@ export function Header() {
         href='/'
       >
         <Image
-          // className={styles.logo}
           src='/logo_start.svg'
           alt='start'
           width={129}
