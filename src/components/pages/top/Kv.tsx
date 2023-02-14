@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '@/styles/sass/top.module.sass'
+import { Btn } from '@/components/common/Btn'
 
 export function Kv() {
   return (
@@ -27,12 +28,7 @@ export function Kv() {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?
       </p>
       <div className={styles['top-kv__btnWrap']}>
-        <a
-          className={[styles['c-btn'], styles['c-btn--kv']].join(' ')}
-          href='#'
-        >
-          Explore
-        </a>
+        <Btn txt={'Explore'} style={'c-btn--kv'} />
       </div>
     </div>
   )
