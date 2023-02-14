@@ -6,7 +6,10 @@ import { Header } from '@/components/layouts/Header'
 import { LogoList } from '@/components/pages/top/LogoList'
 import { CardList } from '@/components/pages/top/CardList'
 import { Kv } from '@/components/pages/top/Kv'
+import { SectionLead } from '@/components/common/SectionLead'
+import { Btn } from '@/components/common/Btn'
 import styles from '@/styles/sass/top.module.sass'
+
 // import styles from '@/styles/Home.module.sass'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,32 +31,18 @@ export default function Home() {
           className={styles['top-content']}
         >
           <div className={styles['top-content__inner']}>
-            <p
-              className={styles['top-content__subTtl']}
-            >PARTNERS
-            </p>
-            <h2
-              className={styles['top-content__ttl--primary']}
-            >
-              Lorem Ipsum Dolor
-            </h2>
-            <p
-              className={styles['top-content__leadTxt']}
+            <SectionLead
+              subtitle={'PARTNERS'}
+              title={'Lorem Ipsum Dolor'}
             >
               Lorem ipsum, dolor sit amet consectetur
               <span>
                 adipisicing elit.
               </span>
-            </p>
+            </SectionLead>
             <LogoList />
             <div className={styles['top-content__btnWrap']}>
-              <a
-                // className={`${styles['c-btn']} ${styles['c-btn--primary']}`}
-                className={[styles['c-btn'], styles['c-btn--primary']].join(' ')}
-                href='#'
-              >
-                Learn More
-              </a>
+              <Btn txt={'Learn More'} style={'c-btn--primary'} />
             </div>
             <div className={styles['top-content__desc']}>
               <Image
@@ -72,12 +61,7 @@ export default function Home() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?
               </p>
               <div className={styles['top-content__btnWrap--other']}>
-                <a
-                  className={[styles['c-btn'], styles['c-btn--primary']].join(' ')}
-                  href='#'
-                >
-                  Learn More
-                </a>
+                <Btn txt={'Learn More'} style={'c-btn--primary'} />
               </div>
             </div>
             <div className={styles['top-content__desc']}>
@@ -97,12 +81,7 @@ export default function Home() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?
               </p>
               <div className={styles['top-content__btnWrap--other']}>
-                <a
-                  className={[styles['c-btn'], styles['c-btn--primary']].join(' ')}
-                  href='#'
-                >
-                  Learn More
-                </a>
+                <Btn txt={'Learn More'} style={'c-btn--primary'} />
               </div>
             </div>
           </div>
@@ -112,30 +91,18 @@ export default function Home() {
           className={styles['top-content']}
         >
           <div className={styles['top-content__inner']}>
-            <p
-              className={styles['top-content__subTtl']}
-            >
-              TEAM</p>
-            <h2
-              className={styles['top-content__ttl--primary']}
-            >
-              Our Talents</h2>
-            <p
-              className={styles['top-content__leadTxt']}
+            <SectionLead
+              subtitle={'TEAM'}
+              title={'Our Talents'}
             >
               Lorem ipsum, dolor sit amet consectetur
               <span>
                 adipisicing elit.
               </span>
-            </p>
+            </SectionLead>
             <CardList />
             <div className={styles['top-content__btnWrap']}>
-              <a
-                className={[styles['c-btn'], styles['c-btn--primary']].join(' ')}
-                href='#'
-              >
-                Learn More
-              </a>
+              <Btn txt={'Learn More'} style={'c-btn--primary'} />
             </div>
           </div>
         </section>
