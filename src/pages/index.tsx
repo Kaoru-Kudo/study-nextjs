@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google'
 import { Footer } from '@/components/layouts/Footer'
 import { Header } from '@/components/layouts/Header'
 import { LogoList } from '@/components/pages/top/LogoList'
-import { CardList } from '@/components/pages/top/CardList'
+import { PersonList } from '@/components/pages/top/PersonList'
 import { Kv } from '@/components/pages/top/Kv'
 import { SectionLead } from '@/components/common/SectionLead'
 import { Btn } from '@/components/common/Btn'
@@ -100,7 +100,7 @@ export default function Home() {
                 adipisicing elit.
               </span>
             </SectionLead>
-            <CardList />
+            <PersonList />
             <div className={styles['top-content__btnWrap']}>
               <Btn txt={'Learn More'} style={'c-btn--primary'} />
             </div>

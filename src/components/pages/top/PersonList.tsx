@@ -1,7 +1,7 @@
 import { IllustCard } from '@/components/common/IllustCard'
 import styles from '@/styles/sass/top.module.sass'
 
-export function CardList() {
+export function PersonList() {
   return (
     <ul className={styles['top-cardList']}>
       <li className={styles['top-cardList__item']}>
