@@ -1,4 +1,4 @@
-import { IllustCard } from '@/components/common/IllustCard'
+import { IllustCard } from '@/components/common/illustCard'
 import styles from '@/styles/sass/top.module.sass'
 
 export function CardList() {
